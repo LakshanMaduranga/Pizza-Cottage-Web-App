@@ -1,0 +1,128 @@
+body {background-color: #211e1e;}
+/*this is single product */
+/*h1*/
+h1 {color: white;
+	text-align: center;
+	text-decoration: underline;
+	font-style: Georgia, serif;
+	font-size: 48px;
+}
+h3 {color: white;
+	text-align: center;
+}
+td{
+	color:white;
+}
+pre {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+.card{
+	float: ;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+.product_wrapper {
+	float:left;
+	padding: 30px;
+	text-align: center;
+	}
+	/*highlight when mouse on it*/
+	.product_wrapper:hover {
+	box-shadow: 0 0 0 2px #e5e5e5;
+	cursor:pointer;
+	}
+	/*product name*/
+	.product_wrapper .name {
+	font-weight:bold;
+	color: white;
+	}
+	.product_wrapper .price {
+	font-weight:bold;
+	color: white;
+	}
+	/*buy button*/
+	.product_wrapper .buy {
+	text-transform: uppercase;
+	background: #F68B1E;
+	border: 1px solid #F68B1E;
+	cursor: pointer;
+	color: #fff;
+	padding: 8px 40px;
+	margin-top: 10px;
+}
+/*button color change*/
+.product_wrapper .buy:hover {
+	background: lightblue;
+	border-color: lightblue;
+}
+/*/////////////////////////////////////*/
+.product_wrapper .add {
+	text-transform: uppercase;
+	background: #F68B1E;
+	border: 1px solid #F68B1E;
+	cursor: pointer;
+	color: #fff;
+	padding: 8px 40px;
+	margin-top: 10px;
+}
+/*button color change*/
+.product_wrapper .add:hover {
+	background: lightgreen;
+	border-color:lightgreen;
+}
+/*////////////////////////////////////*/
+
+
+/*massagebox*/
+.message_box .box{
+	margin: 15px 0px;
+	border: 1px solid #2b772e;
+	text-align: center;
+	font-weight: bold;
+	color: #2b772e;
+	}
+	/*display table*/
+	.table td {
+	border-bottom: #F0F0F0 2px solid;
+	padding: 30px;
+	}
+	/*this is small cart page link position*/
+	.cart_div {
+	float: top-right;
+	font-weight:bold;
+	position:relative;
+	}
+	/*cart word colour*/
+	.cart_div a {
+	color:white;
+	}	
+	/*in here it shows details how many product in cart*/
+	.cart_div span {
+	font-size: 12px;
+	line-height: 14px;
+	background: #F68B1E;
+	padding: 2px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: -1px;
+	left: 13px;
+	color: #fff;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	}
+	/*remove cart details show*/
+	.cart .remove {
+	background: none;
+	border: none;
+	color: #0067ab;
+	cursor: pointer;
+	padding: 0px;
+	}
+	/*remove word underline when mouse moveit*/
+	.cart .remove:hover {
+	text-decoration:underline;
+	}

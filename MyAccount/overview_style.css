@@ -1,0 +1,63 @@
+body{
+	background-color: #e8eaed;
+}
+div.main{
+	display: block;
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	border-radius: 25px;
+}
+h2.overview_name{
+	padding: 2px;
+}
+h2.order_title,h2.wishlist_title{
+	padding: 12px;
+	font-family: ;
+	text-align: left;
+}
+h1.overview{
+	padding: 2px;
+	background-color: #2E8B57	;
+	text-align: center;
+	border-radius: 12px;
+	color: white;
+	letter-spacing: 3px;
+	font-family: Arial;
+}
+#order_details,#wishlist{
+	border-radius: 12px;
+	width: 100%;
+}
+#order_details th{
+	background-color: lightgreen;
+	border-radius: 12px;
+}
+#wishlist th{
+	background-color: lightgreen;
+	border-radius: 12px;
+}
+button.quick_btn{
+	width: 250px;
+	font-size: 16px;
+	padding: 25px;
+	background-color: white;
+	border-radius: 12px;
+}
+button.quick_btn:hover{
+	background-color: black;
+	color: white;
+}
+img{
+	width: 70px;
+}
+#order_details td{
+	text-align: center;
+	background-color: #F2F3F4;
+	border-radius: 12px;
+}
+#wishlist td{
+	text-align: center;
+	background-color: #F2F3F4;
+	border-radius: 12px;
+}

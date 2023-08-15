@@ -1,0 +1,84 @@
+<html>
+<head><title>Register</title>
+	<link rel="stylesheet" type="text/css" href="register.css">
+	<script src="select.js"></script>
+</head>
+<body onload="resetSelection()">
+	<div name="regform">
+	<fieldset>
+		<legend>Sign Up</legend>
+		<h2>CREATE ACCOUNT</h2>
+		<center>Pizza Cottage account makes ordering your meal even quicker and easier!<br> Please fill out the fields below to create your account.</center>
+		<form action="http://Localhost/register.php" method="POST" name="registerForm">
+			<br>
+			<table align="center">
+				<tr>
+					<td>First Name</td>
+					<td>Last Name</td>
+				</tr>
+				<tr>
+					<td class="box"><input type="text" name="fname" maxlength="32" pattern="[A-Za-z]{1,32}" title="Cannot contain numbers or special characters" required></td>
+					<td class="box"><input type="text" name="lname" maxlength="32" pattern="[A-Za-z]{1,32}" title="Cannot contain numbers or special characters" required></td>
+				</tr>
+				<tr>
+					<td>Email</td>
+				</tr>
+				<tr>
+					<td class="box"  colspan="2"><input type="email" name="regEmail" class="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Invalid email address.(example@gmail.com)" required></td>
+				</tr>
+				<tr>
+					<td>Password</td>
+					<td>Confirm Password</td>
+				</tr>
+				<tr>
+					<td class="box"><input type="Password" name="regPassword" id="regPassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required></td>
+					<td class="box"><input type="Password" name="confirmPassword" id="confirmPassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"></td>
+					<script src="passwordMatchValidation.js" type="text/javascript">function ();</script>
+				</tr>
+				<tr>
+					<td>House No</td>
+					<td>Street Name</td>
+				</tr>
+				<tr>
+					<td class="box"><input type="text" name="houseNo" required></td>
+					<td class="box"><input type="text" name="streetName" required></td>
+				</tr>
+				<tr>
+					<td>District</td>
+					<td>City</td>
+				</tr>
+				<tr>
+					<td class="box">
+						<select name="districtSelect" id="districtSelect" size="1" onchange="makeSubmenu(this.value)" required>
+							<option value="" disabled selected>Choose District</option>
+							<option>Colombo</option>
+							<option>Gampaha</option>
+							<option>Galle</option>
+							<option>Kandy</option>
+						</select>
+					</td>
+					
+					<td class="box">
+						<select name="citySelect" id="citySelect" size="1" required>
+							<option value="" disabled selected>Choose City</option>
+							<option></option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Mobile No</td>
+				</tr>
+				<tr>
+					<td class="box"><input type="tel" name="mobileNo" id="mobileNo" pattern="07[1,2,5,6,7,8][0-9]+" maxlength="10" required></td>
+				</tr>
+				<tr>
+					<td class="box" colspan="2"><input type="checkbox" name="tandcAgree" title="Please agreed to our terms & conditions" required>I agree to the Terms and Conditions</td>
+				</tr>
+			</table><br>
+			 <center><button type="Submit" name="submitInfo" value="Submit"  class="button submitInfo" onclick="validateform();">Submit</button></center>
+		</form>
+	</fieldset>
+	</div>
+</body>
+</html>
+

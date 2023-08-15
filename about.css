@@ -1,0 +1,19 @@
+body
+{
+  background-Image: url('images/teamback.jpg');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:white;
+  text-align:center;
+  font-family:Arial;
+}
+.text{
+	font-size:25px;
+}
+td{
+	  text-align:center;
+	  padding: 10px 20px;
+}
+

@@ -1,0 +1,48 @@
+body{
+	background-color: #e8eaed;
+}
+h1.orders_title{
+	padding: 2px;
+	background-color: #2E8B57	;
+	text-align: center;
+	border-radius: 12px;
+	color: white;
+	letter-spacing: 3px;
+	font-family: Arial;
+}
+#order_details,#wishlist{
+	border-radius: 12px;
+	width: 100%;
+}
+#order_details th{
+	background-color: lightgreen;
+	border-radius: 12px;
+}
+div.Search{
+	font-size: 20px;
+}
+div.main_order_details{
+	display: block;
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	border-radius: 25px;
+}
+img{
+	width: 70px;
+}
+#order_details td{
+	text-align: center;
+	background-color: #F2F3F4;
+	border-radius: 12px;
+}
+#search_products {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 500px;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}

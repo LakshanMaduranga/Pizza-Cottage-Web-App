@@ -1,0 +1,43 @@
+body{
+	background-color: #e8eaed;
+}
+h1.settings_title{
+	padding: 2px;
+	background-color: #2E8B57	;
+	text-align: center;
+	border-radius: 12px;
+	color: white;
+	letter-spacing: 3px;
+	font-family: Arial;
+}
+div.user_settings{
+	font-size: 25px;
+}
+#first_name,#last_name,#email,#current_password,#new_password,#confirm_password,#house_no,#st_name,#District,#City,#mobile_no{
+	width: 500px;
+	height: 25px;
+}
+#btn_save_changes{
+	background-color: #4CAF50;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	border: none;
+	border-radius: 12px;
+	margin: 20px;
+}
+#btn_save_changes:hover{
+	background-color: green;
+}
+table.user_basic_info,table.user_password_change{
+	padding: 12px;
+	border-spacing: 15px;
+}
+div.main_settings{
+	display: block;
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	border-radius: 25px;
+}
